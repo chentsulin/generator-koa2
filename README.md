@@ -15,7 +15,7 @@ $ npm install -g generator-koa2
 
 > Note: `generator-koa2` as a [yeoman](http://yeoman.io/) generator, so you must have global `yo` installed, too.
 
-``sh
+```sh
 $ npm install -g yo
 ```
 
