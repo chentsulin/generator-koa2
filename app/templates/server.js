@@ -24,6 +24,7 @@ app.use(logger());
 app.use(convert(bodyParser()));
 app.keys = ['some secret hurr'];
 app.use(convert(session(app)));
+app.use(convert(serve('public')));
 app
   .use(router.routes())
   .use(router.allowedMethods());
