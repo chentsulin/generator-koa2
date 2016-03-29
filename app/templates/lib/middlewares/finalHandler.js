@@ -1,9 +1,10 @@
+/* eslint no-param-reassign: 0 */
 export default function finalHandler() {
   return async (ctx, next) => {
     try {
       await next();
       // Handle 404 upstream.
-      var status = ctx.status || 404;
+      const status = ctx.status || 404;
       if (status === 404) ctx.throw(404);
     } catch (error) {
       ctx.status = error.status || 500;
