@@ -22,7 +22,7 @@ $ npm install -g yo
 ## Usage
 
 ```sh
-$ yo koa2
+$ mkdir your-app-name && cd your-app-name && yo koa2
 ```
 
 ## License
