@@ -19,7 +19,7 @@ app.use(logger());
 app.use(bodyParser());
 app.keys = ['some secret hurr'];
 app.use(convert(session(app)));
-app.use(serve('public'));
+app.use(convert(require('koa-static')(__dirname + '/public')));
 app
   .use(router.routes())
   .use(router.allowedMethods());
