@@ -4,6 +4,7 @@ import logger from 'koa-logger';
 import session from 'koa-session';
 import views from 'koa-views';
 import convert from 'koa-convert';
+import serve from 'koa-static'
 import finalHandler from './lib/middlewares/finalHandler';
 import router from './router';
 
