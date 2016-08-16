@@ -29,7 +29,7 @@ describe('generator', function() {
       '.editorconfig',
       '.gitattributes',
       '.gitignore',
-      '.eslintrc',
+      '.eslintrc.json',
       '.eslintignore',
       '.babelrc',
       'CHANGELOG.md',
